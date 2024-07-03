@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let set1 = new Set();
+        set1.add(1);
+        set1.add(2);
+        set1.add(3);
+        set1.add(4);
+
+        document.write(set1);
+        console.log(set1);
+
+        //type 2
+
+        set1.add(20).add(30).add(40).add(50);
+
+        document.write(set1);
+        console.log(set1);
+
+        let set2 =  new Set('hello');
+
+        document.write(set2);
+        console.log(set2.delete('l'));
+        console.log(set2)
+    </script>
+</body>
+</html>

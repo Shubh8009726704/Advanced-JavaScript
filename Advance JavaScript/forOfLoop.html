@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students = ['Shubham ', 'Manish ', 'Nikhil ', 'Rohit '];
+        for(var student of students){    
+            document.write(student);
+            console.log(student);
+        }            
+        
+        var string = 'Helllo World ';
+        for(var x of string){
+            document.write(x);
+            console.log(x);
+        }
+
+
+        // when we use same character multiple time bt count only single time
+        let mySet = new Set("Hellllo ");
+        for(let x of mySet){
+            document.write(x);
+            console.log(x);
+        }
+
+
+        const students1 = ['Shubham ', 'Manish ', 'Nikhil ', 'Rohit '];
+        for(let student of students1){
+            document.write(student);
+            console.log(student);
+        }
+    </script>
+</body>
+</html>

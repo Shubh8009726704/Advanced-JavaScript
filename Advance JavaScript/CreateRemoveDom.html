@@ -1,0 +1,31 @@
+[12:58 PM] Deepika Singh
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h2>Hands on 6: Creating and Removing DOM Elements</h2>
+	<ul id="myList">
+		<li>List Item 1</li>
+		<li>List Item 2</li>
+		<li>List Item 3</li>
+	</ul>
+	<button id="addButton">Add Item</button>
+	<button id="removeButton">Remove Item</button>
+
+	<script>
+		document.getElementById("addButton").addEventListener("click",function(){
+			let newItem=document.createElement("li");
+			newItem.innerText="New Item";
+			document.getElementById("myList").appendChild(newItem);
+		});
+		document.getElementById("removeButton").addEventListener("click",function(){
+			let list=document.getElementById("myList");
+			if(list.children.length>0){
+				list.removeChild(list.lastElementChild);
+			}
+		});
+	</script>
+</body>
+</html>
+ 

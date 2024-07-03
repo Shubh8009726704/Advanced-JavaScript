@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hands on 7 : Travesral DOM Elements</h2>
+    <div id="container">
+        <p class="para">This is the first paragraph</p>
+        <p class="para">This is the second paragraph</p>
+        <p class="para">This is the third paragraph</p>
+    </div>
+    <button id="highlightButton">Highlight Paragraph</button>
+    
+    <script>
+        function highlight(){
+            let para = document.getElementsByClassName('para');
+            for(let i=0;i<para.length;i++){
+                para[i].style.color = 'red';
+            }
+        }
+        document.getElementById('highlightButton').addEventListener('click',highlight);
+
+
+        //type 2
+         
+        // function highlightParagraph() {
+        //     const paragraphs = document.querySelectorAll('.para');
+ 
+        //     paragraphs.forEach(paragraph => {
+        //         paragraph.classList.toggle('highlight');
+
+        //         console.log('Parent Node:', paragraph.parentNode); 
+        //         console.log('Next Sibling:', paragraph.nextSibling);
+ 
+                
+        //         const children = Array.from(paragraph.parentNode.children);
+        //         console.log('Child Elements:', children); 
+        //     });
+        // }
+ 
+        // document.getElementById('highlightButton').addEventListener('click', highlightParagraph);
+
+    </script>
+</body>
+</html>

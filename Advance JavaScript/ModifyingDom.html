@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hands on 5: Modifying DOM Element</h1>
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button id="changeTextButton">Text Change</button>
+    <p id="outputText"></p>
+
+    <script>
+
+        let textInput = document.getElementById('textInput');
+        let changeTextButton = document.getElementById('changeTextButton');
+        let outputText = document.getElementById('outputText');
+        changeTextButton.addEventListener('click', function(){
+            outputText.innerText = textInput.value;
+        })
+
+
+        document.getElementById('changeTextButton').addEventListener('click', function(){
+            let inputtext = document.getElementById('textInput').value;
+            document.getElementById('outputText').innerText = "You Entered : "+inputtext;
+            document.getElementById('outputText').style.color = 'blue';
+
+        })
+    </script>
+</body>
+</html>

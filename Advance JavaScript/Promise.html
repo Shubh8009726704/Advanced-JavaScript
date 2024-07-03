@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hands on  : Create a Basic Promise Object</h2>
+    <script>
+
+        let promise = new Promise(function(resolve, reject){
+            const x = 'edunetfoundation';
+            const y = 'edunetfoundation';
+
+            if(x === y){
+                resolve();
+            }else{
+                reject();
+            }
+
+        });
+        promise.then(function(){
+            document.write('Promise resolved');
+        }).catch(function(){
+            document.write('Promise rejected');
+        });
+    </script>
+</body>
+</html>

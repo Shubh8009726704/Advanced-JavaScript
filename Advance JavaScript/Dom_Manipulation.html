@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation Basics</title>
+</head>
+<body>
+    <h1>Hands on 3: Dom Manipulation</h1>
+    <button id="changeTextButton">Change Text</button>
+    <h2 id="heading">Hello Students</h2>
+
+    <script>
+
+        let button = document.getElementById('changeTextButton');
+        let heading = document.getElementById('heading');
+
+        button.addEventListener('click', function(){
+            heading.innerText = 'Good Morning';
+            heading.style.color = 'red';
+        })
+
+        // type 2 
+
+        // document.getElementById('changeTextButton').addEventListener('click', function(){
+        //     document.getElementById('heading').innerText = 'Change Text!';
+        //     document.getElementById('heading').style.color = 'red';
+        // })
+    </script>
+</body>
+</html>
